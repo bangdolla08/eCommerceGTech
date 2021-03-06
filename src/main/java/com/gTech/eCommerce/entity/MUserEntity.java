@@ -11,8 +11,7 @@ import java.sql.Date;
  * @created 06/03/21-March-2021 @at 23.33
  * @project eCommerce
  */
-@Setter
-@Getter
+@Data
 @Entity
 @Table(name = "m_user", schema = "gTechTest", catalog = "")
 public class MUserEntity {
