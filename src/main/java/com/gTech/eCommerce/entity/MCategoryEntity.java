@@ -15,7 +15,7 @@ import java.util.Collection;
 @Table(name = "m_category", schema = "gTechTest", catalog = "")
 public class MCategoryEntity {
     @Id@GeneratedValue@Column(name = "id", nullable = false)
-    private Long id;
+    private Integer id;
     @Basic@Column(name = "name", nullable = true, length = 50)
     private String name;
     @OneToMany(mappedBy = "mCategoryByIdCategory")

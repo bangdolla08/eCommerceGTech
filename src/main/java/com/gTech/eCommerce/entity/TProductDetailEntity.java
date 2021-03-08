@@ -14,21 +14,13 @@ import javax.persistence.*;
 @Table(name = "t_product_detail", schema = "gTechTest", catalog = "")
 public class TProductDetailEntity {
     @Id@GeneratedValue
-    private Long id;
-    @Id@Column(name = "id_product", nullable = false)
-    private int idProduct;
+    private Integer id;
     @Basic@Column(name = "name", nullable = true, length = 50)
     private String name;
     @Basic@Column(name = "price", nullable = true)
     private Integer price;
     @Basic@Column(name = "description", nullable = true, length = 100)
     private String description;
-    @Basic@Column(name = "id_brand", nullable = true)
-    private Integer idBrand;
-    @Basic@Column(name = "id_category", nullable = true)
-    private Integer idCategory;
-    @Basic@Column(name = "id_store", nullable = true)
-    private Integer idStore;
     @ManyToOne@JoinColumn(name = "id_brand", referencedColumnName = "id")
     private MBrandEntity mBrandByIdBrand;
     @ManyToOne@JoinColumn(name = "id_category", referencedColumnName = "id")
