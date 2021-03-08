@@ -31,3 +31,4 @@ build/
 
 ### VS Code ###
 .vscode/
+/lib/byte-buddy-1.10.7.jar
