@@ -14,7 +14,7 @@ import javax.persistence.*;
 @Table(name = "t_product_detail", schema = "gTechTest", catalog = "")
 public class TProductDetailEntity {
     @Id@GeneratedValue
-    private Integer id;
+    private Integer idProduct;
     @Basic@Column(name = "name", nullable = true, length = 50)
     private String name;
     @Basic@Column(name = "price", nullable = true)

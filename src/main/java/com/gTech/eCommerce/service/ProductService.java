@@ -35,6 +35,7 @@ public class ProductService {
                 .idCategory(tProductDetailEntity.getMCategoryByIdCategory().getId())
                 .idStore(tProductDetailEntity.getMStoreByIdStore().getId())
                 .build();
+        productRes.setDetailProduct(detailProduct);
         return productRes;
     }
 
@@ -45,7 +46,7 @@ public class ProductService {
                 .brand(tProductDetailEntity.getMBrandByIdBrand().getName())
                 .store(tProductDetailEntity.getMStoreByIdStore().getName())
                 .price(tProductDetailEntity.getPrice().toString())
-                .idProduct(tProductDetailEntity.getId())
+                .idProduct(tProductDetailEntity.getIdProduct())
                 .category(tProductDetailEntity.getMCategoryByIdCategory().getName())
                 .build();
     }
